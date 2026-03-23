@@ -30,7 +30,7 @@ Routes
 
 // Root route (health check route)
 app.get("/", (req, res) => {
-  res.status(200).send("🚀 File Vault API is running successfully");
+  res.status(200).send(" File Vault API is running successfully");
 });
 
 // File routes
