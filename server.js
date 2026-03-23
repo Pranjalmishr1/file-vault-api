@@ -10,6 +10,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+app.get("/", (req, res) => {
+  res.send("File Vault API is running 🚀");
+});
+
+// Existing routes
 app.use("/files", fileRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
